@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/portrait"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.example.taskmanager.LoginFrag"
+        android:id="@+id/loginFrag"
+        tools:layout="@layout/fragment_login"
+        />
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.example.taskmanager.SignupFrag"
+        android:id="@+id/signupFrag"
+        tools:layout="@layout/fragment_signup"
+        />
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.example.taskmanager.FragList"
+        android:id="@+id/Fraglist"
+        tools:layout="@layout/fragment_frag_list"
+        />
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.example.taskmanager.FragDetail"
+        android:id="@+id/FragDetail"
+        tools:layout="@layout/fragment_frag_detail"
+        />
+
+
+</LinearLayout>
